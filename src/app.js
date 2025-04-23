@@ -1,11 +1,11 @@
-import "bootstrap";
-import "./style.css";
+let pronombres = ['el', 'nuestro'];
+let adjetivos = ['gran', 'enorme'];
+let sustantivos = ['gato', 'ratón'];
 
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (let p of pronombres) {
+  for (let a of adjetivos) {
+    for (let s of sustantivos) {
+      console.log(p + a + s + ".com");
+    }
+  }
+}
